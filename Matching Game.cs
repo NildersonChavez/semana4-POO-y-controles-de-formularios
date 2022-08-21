@@ -16,6 +16,9 @@ namespace semana4_POO_y_controles_de_formularios
         Label firstClicked = null;
         Label secondClicked = null;
         Random random = new Random();
+        List<string> icons = new List<string>();
+            "!", "!", "N", "N", ",", ",", "K", "K", 
+            "b", "b", "v", "v", "w", "w", "z", "z"
         public Form1()
         {
             InitializeComponent();
