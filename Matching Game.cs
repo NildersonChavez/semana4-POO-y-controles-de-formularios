@@ -601,7 +601,22 @@ namespace semana4_POO_y_controles_de_formularios
                 secondClicked = null;
             }
 
-           
+            private void CheckForWinner()
+            {
+                foreach (Control control in tableLayoutPanel1.Controls)
+                {
+                    Label iconLabel = control as Label;
+
+                    if (iconLabel != null)
+                    {
+                        if (iconLabel.ForeColor == iconLabel.BackColor)
+                            return;
+                    }
+
+                }
+
+                MessageBox.Show("You matched all the icons!", "Congratulations");
+                Close();
             }
 
 
