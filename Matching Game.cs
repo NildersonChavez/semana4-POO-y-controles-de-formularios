@@ -585,9 +585,23 @@ namespace semana4_POO_y_controles_de_formularios
                         return;
                     }
 
+                    timer1.Start();
                 }
             }
 
+            private void timer1_Tick_1(object sender, EventArgs e)
+            {
+                timer1.Stop();
+
+
+                firstClicked.ForeColor = firstClicked.BackColor;
+                secondClicked.ForeColor = secondClicked.BackColor;
+
+                firstClicked = null;
+                secondClicked = null;
+            }
+
+           
             }
 
 
