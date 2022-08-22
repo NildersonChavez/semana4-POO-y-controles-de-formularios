@@ -614,7 +614,6 @@ namespace semana4_POO_y_controles_de_formularios
                     }
 
                 }
-
                 MessageBox.Show("You matched all the icons!", "Congratulations");
                 Close();
             }
